@@ -1,0 +1,22 @@
+
+class Data2{int x;}
+
+public class ch6_24 {
+
+	public static void main(String[] args) {
+		 Data2 d = new Data2();
+		 d.x=10;
+		 System.out.println("main() : x = "+d.x);
+		 
+		 change(d);
+		 System.out.println("change(d)");
+		 System.out.println("main() : x = "+d.x);
+		 
+		 
+	}
+
+	static void change(Data2 d) { //참조형 매개변수d
+		d.x=100000;
+		System.out.println("change() : x = " + d.x);
+	}
+}
